@@ -1,0 +1,30 @@
+# link_to
+snippet lt
+	<%= link_to "${1:name}", ${2:dest} %>
+
+# content_for
+snippet cf
+	<% content_for :${1:yield_label_in_layout} do -%>
+	  ${2}
+	<% end -%>
+
+# if
+snippet if
+	<% if ${1:condition} %>
+	  ${2}
+	<% end %>
+
+# if else
+snippet ife
+	<% if ${1} %>
+	  ${2}
+	<% else %>
+	  ${3}
+	<% end %>
+
+snippet %%
+	<% ${1} %>
+
+snippet %
+	<%= ${1} %>
+

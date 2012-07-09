@@ -110,7 +110,8 @@ let g:ackprg="ack -H --nocolor --nogroup --column"
 nnoremap <silent> <F3> :YRShow<cr>
 inoremap <silent> <F3> <ESC>:YRShow<cr>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufNewFile,BufRead *.html.erb set filetype=html.erb
+
 "Automate tabularization of cucumber features
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
